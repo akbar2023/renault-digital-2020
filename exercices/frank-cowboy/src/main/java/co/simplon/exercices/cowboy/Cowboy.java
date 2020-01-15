@@ -47,6 +47,12 @@ public class Cowboy {
      */
     public void shoot(Cowboy target) {
         // To be implemented
+        if(!target.isDead()) {
+            int damage = this.weapon.fire();
+            target.energy -= damage;
+            System.out.println(this.name + ": " + this.energy);
+            System.out.println(target.name + ": " + target.energy);
+        }
     }
 
     /**
@@ -56,7 +62,11 @@ public class Cowboy {
      */
     public boolean isDead() {
         // To be implemented
-        return true;
+        if (this.energy <= 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     @Override

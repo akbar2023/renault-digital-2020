@@ -45,6 +45,10 @@ public class Weapon {
      */
     public int fire() {
         // To be implemented
+        if (this.bullets > 0) {
+            this.bullets -= 1;
+            return damages;
+        }
         return 0;
     }
 

@@ -1,5 +1,7 @@
 package co.simplon.exercices.cowboy;
 
+import java.util.Random;
+
 public class Application {
 
     public static void main(String[] args) {
@@ -21,16 +23,29 @@ public class Application {
      */
     private static void shootUntilDeath(Cowboy luckyLuke, Cowboy joeDalton) {
         // To be implemented
+        while (!joeDalton.isDead() && !luckyLuke.isDead()) {
+
+            Random r = new Random();
+            int num = r.nextInt(2);
+            System.out.println("Le random num" + num);
+            if(num == 0){
+                luckyLuke.shoot(joeDalton);
+            } else {
+                joeDalton.shoot(luckyLuke);
+            }
+        }
     }
 
     private static Cowboy createLuckyLuke() {
         // To be implemented
-        return null;
+        Weapon weapon = new Weapon("Colt 15", 10, 1);
+        return new Cowboy("Lucky Luke", 10, weapon);
     }
 
     private static Cowboy createJoeDalton() {
         // To be implemented
-        return null;
+        Weapon weapon = new Weapon("Colt 10", 10, 1);
+        return new Cowboy("Joe Dalton", 10, weapon);
     }
 
     private static void print(Cowboy luckyLuke, Cowboy joeDalton) {
