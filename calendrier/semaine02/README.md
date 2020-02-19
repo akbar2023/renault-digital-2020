@@ -1,70 +1,62 @@
-# Semaine 02
+# Semaine 02 - 20/21/22 janvier
 
 ## Plan
 
-- Revue du contenu semaine passé (30 minutes)
-    - Focus sur 1 élément par groupe
+- Retour sur [semaine passé](../semaine01/README.md) (30 minutes)
+    - Question sur "debug" vs "console.log"
+        - Utilisation d'un IDE recommandé (vscode, webstorm)
+        - Utilisation d'un débuggeur pour JavaScript
+        - Utilisation d'un débuggeur pour Java
+    - Question sur l'affectation d'un `window.title`
+        - Affectation de variable
+        - Passage de variable par référence / valeur
 - Mob programming sur un exercice (120 minutes)
-    - Même sujet que le focus
+    - Focus sur 1 sujet par groupe (à choisir ici bas)
+    - Faire les étapes ["Workflow d'un ticket"](https://simplonco.github.io/renault-digital-2020/calendrier/semaine01/)
 - Feedback
-
-## Sujets
-
-- Algorithms
-- Arrays
-- Bitwise Operations
-- Booleans
-- Classes
-- Concurrency
-- Conditionals
-- Cryptography
-- Dates
-- Enumerations
-- Equality
-- Exception Handling
-- Files
-- Filtering
-- Floating Point Numbers
-- Functional Programming
-- Games
-- Generics
-- Graphs
-- Integers
-- Lists
-- Logic
-- Loops
-- Maps
-- Math
-- Matrices
-- Object Oriented Programming
-- Optional Values
-- Parsing
-- Pattern Matching
-- Pattern Recognition
-- Queues
-- Randomness
-- Records
-- Recursion
-- Refactoring
-- Regular Expressions
-- Searching
-- Security
-- Sets
-- Sorting
-- Stacks
-- Strings
-- Text Formatting
-- Time
-- Transforming
-- Trees
-- Type Conversion
-- Variables
 
 ## Contenu
 
-TODO
+- Utilisation de git
+    - git tag
+    - git branch
+    - git merge
+    - git pull / git push
+- Survol de `java.util.Collection`
+    - Différence entre `int[]` et `List<Integer>`
+    - Retour sur le boxing
+    - `java.util.List` (implementation `ArrayList`, utilisation de `List.of`)
+    - `java.util.Set` (implementation `HashSet`)
+    - `java.util.Map` (implementation `HashMap`)
+- Objets
+    - Déclaration d'une classe
+    - Déclaration d'un constructeur
+    - Déclaration de variable d'instance (différence variable locales)
+    - Marqueurs de visiblité (`private`, `protected`, `public`, et rien)
+- Point d'entrés
+    - Application classique : `public static void main`
+    - Packaging de type jar : un zip des classes
+- Lecture sur disque (à revoir)
+    - Lecture de fichier avec `Files.readAllLines`
+    - Écriture de fichier avec `Files.write`
+    - Suppression de fichier avec `Files.delete`
+    - Gestion `IOException` obligatoire (checked)
+    - Utilisation de `Path` avec `Paths`
+- java.util.stream
+    - Function
+    - Predicate
+    - etc.
+
+## Sujets [exercism.io](https://exercism.io/my/tracks/java)
+
+Sujets vu: objet, type primitifs, api collection (list)
 
 ## Notes
 
-TODO
+- question recursion
+- question utilisation git upstream
+- mercredi: correction lego
+- mercredi: coaching bien pour certain, moins pour d'autres
+- mercredi: prendre un probleme pour les autres et le resoudre ensemble
+- mercredi: probleme renault
 
