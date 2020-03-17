@@ -4,6 +4,7 @@ public class PersonDto {
 
     private String firstName;
     private String lastName;
+    // TODO ajouter une ville
 
     public PersonDto(String firstName, String lastName) {
         this.firstName = firstName;
