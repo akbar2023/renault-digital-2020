@@ -1,4 +1,9 @@
 <div *ngFor="let person of persons">
   <span>{{ person.firstName }} {{ person.lastName }}</span>
   <!-- TODO ajouter un button "show weather" pour la ville de la personne -->
+  <button (click)="onClick(person.city)">City {{person.city}}</button>
 </div>
+
+<h3>weather</h3>
+
+<app-weather></app-weather>

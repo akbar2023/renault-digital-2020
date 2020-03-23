@@ -17,11 +17,11 @@ public class Controller extends HttpServlet {
     @GetMapping("/persons")
     public List<PersonDto> get() {
         return List.of(
-                new PersonDto("Emmanuel", "Macron"),
-                new PersonDto("François", "Hollande"),
-                new PersonDto("Nicolas", "Sarkozy"),
-                new PersonDto("Jacques", "Chirac"),
-                new PersonDto("François", "Mitterrand")
+                new PersonDto("Emmanuel", "Macron", "Berlin"),
+                new PersonDto("François", "Hollande", "Paris"),
+                new PersonDto("Nicolas", "Sarkozy", "London"),
+                new PersonDto("Jacques", "Chirac", "Dublin"),
+                new PersonDto("François", "Mitterrand", "Marseilles")
         );
     }
 
